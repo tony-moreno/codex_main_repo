@@ -6,24 +6,26 @@ last_updated: 2026-07-31
 
 # Package Model
 
-The repository separates project knowledge, executable logic, launchers, and verification.
+The repository separates project knowledge, a canonical launch script, executable logic, installation/development tooling, and verification.
 
 ```text
 project-root/
 ├── docs/      # model, requirements, decisions, prompts, and working context
-├── src/       # Python package and domain/application logic
-├── bin/       # thin launchers and developer utilities
+├── terminal-sci-fi-game.py # canonical launch script
+├── src/       # terminal-sci-fi-game package and domain/application logic
+├── bin/       # installers and installation/development tools
 └── tests/     # automated verification mapped to requirements
 ```
 
 ## Rules
 
 - Game and domain logic belongs under `src/`.
-- `bin/` must remain thin and delegate to package code.
-- Tests should import package behavior rather than test copied launcher logic.
+- `terminal-sci-fi-game.py` must remain thin and delegate to package code.
+- `bin/` must not contain the game launcher or game behavior.
+- Tests should import package behavior and separately verify the canonical launch script.
 - Documentation changes accompany behavior changes.
 - Package boundaries should follow responsibilities discovered through capabilities, not speculative subsystem diagrams.
 
 ## First capability
 
-The `hello-game-world` branch may establish the initial Python package and command entry point. Exact package naming remains an implementation decision for that branch.
+The `hello-game-world` branch establishes the `terminal-sci-fi-game` package for Python 3.11 and later, plus the canonical `python terminal-sci-fi-game.py` launch command.

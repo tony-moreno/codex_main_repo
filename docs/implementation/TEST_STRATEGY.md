@@ -23,6 +23,8 @@ Tests verify requirements; they do not merely exercise code paths.
 - the documented entry point can be invoked in the supported environment;
 - the expected in-world greeting is emitted;
 - a visible prompt is emitted after the greeting;
+- output and application state remain static until a simulated single-key entry;
+- the simulated key is not interpreted and the application exits cleanly;
 - output does not depend on network access or a runtime LLM;
 - tests do not block waiting for interactive input.
 

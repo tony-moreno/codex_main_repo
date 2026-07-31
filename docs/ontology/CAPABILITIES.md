@@ -46,6 +46,6 @@ Capabilities should be composable primitives rather than isolated rewards.
 - configuring identity;
 - calling a runtime language model.
 
-**Planned branch:** `capability/hello-game-world`
+**Implementation branch:** `hello-game-world`, branched from `capability`
 
 **Status:** Defined; not implemented on baseline `main`.

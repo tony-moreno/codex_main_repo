@@ -8,6 +8,15 @@ last_updated: 2026-07-31
 
 This log records meaningful changes to the project model. Git remains the authoritative history for exact diffs.
 
+## 2026-07-31 — CAP-001 implementation
+
+### Added
+
+- canonical `terminal-sci-fi-game.py` launch script;
+- `terminal_sci_fi_game` package with ASCII splash, deterministic greeting, prompt, and cross-platform single-key input boundary;
+- automated coverage for `REQ-001` through `REQ-006`;
+- clean exit after one uninterpreted keyboard entry.
+
 ## 2026-07-31 — Repository baseline
 
 ### Added

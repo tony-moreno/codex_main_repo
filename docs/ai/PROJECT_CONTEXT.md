@@ -70,4 +70,4 @@ AI should not:
 
 Baseline `main` contains the project structure and model. It intentionally contains no executable game behavior.
 
-The next branch is `capability/hello-game-world`, implementing `CAP-001` and `UC-001` only.
+The current use-case branch is `hello-game-world`, branched from `capability` and implementing `CAP-001` and `UC-001` only. It merges back into `capability` after review and passing tests; reviewed capability collections merge from `capability` into `main`.

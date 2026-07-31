@@ -2,7 +2,7 @@
 
 Executable Python package and reusable game/domain logic will live here.
 
-The baseline `main` branch intentionally contains no implementation. The initial package will be created on `capability/hello-game-world` after its exact package name and Python version are selected.
+The baseline `main` branch intentionally contains no implementation. The `terminal-sci-fi-game` package, supporting Python 3.11 and later, will be created on `hello-game-world`.
 
 Rules:
 
