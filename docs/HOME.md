@@ -49,6 +49,7 @@ last_updated: 2026-07-31
 
 - [Coding Guidelines](implementation/CODING_GUIDELINES.md)
 - [Branching Strategy](implementation/BRANCHING_STRATEGY.md)
+- [Baseline Manifest](implementation/BASELINE_MANIFEST.md)
 - [Task Queue](implementation/TASK_QUEUE.md)
 - [Test Strategy](implementation/TEST_STRATEGY.md)
 
@@ -65,4 +66,4 @@ last_updated: 2026-07-31
 
 ## Current next step
 
-Create `capability/hello-game-world`, then implement and merge `CAP-001` without adding command interpretation, research, persistence, or world simulation.
+Complete `hello-game-world` from the shared `capability` branch, verify `REQ-001` through `REQ-006`, then merge it back into `capability` without adding command interpretation, research, persistence, or world simulation.

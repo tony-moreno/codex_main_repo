@@ -8,7 +8,7 @@ last_updated: 2026-07-31
 
 ## Main branch
 
-`main` represents integrated, reviewed, and working milestones.
+`main` represents integrated, reviewed, and working collections of capabilities.
 
 - Protect `main` in GitLab.
 - Do not develop directly on `main`.
@@ -16,20 +16,24 @@ last_updated: 2026-07-31
 - Require passing automated tests once the pipeline exists.
 - Prefer squash merges for small capability branches unless preserving individual commits adds real value.
 
-## Capability branches
+## Integration branch
 
-Use:
+`capability` branches from `main` and integrates related, individually reviewed use-case slices. Once a coherent collection is satisfactory and all tests pass, merge `capability` into `main` through a merge request.
+
+## Use-case branches
+
+Branch each use-case slice from `capability`. Use:
 
 ```text
-capability/<short-kebab-case-name>
+<short-kebab-case-name>
 ```
 
 Examples:
 
 ```text
-capability/hello-game-world
-capability/terminal-prompt-interpretation
-capability/research-mechanic
+hello-game-world
+terminal-prompt-interpretation
+research-mechanic
 ```
 
 Each branch should contain one coherent vertical slice across the artifacts it affects:
@@ -41,17 +45,18 @@ intent → ontology/experience → use case → requirements → architecture �
 ## Suggested workflow
 
 ```bash
-git switch main
+git switch capability
 git pull --ff-only
-git switch -c capability/hello-game-world
+git switch -c hello-game-world
 # define, implement, test, and document
-git push -u origin capability/hello-game-world
-# open GitLab merge request into main
+git push -u origin hello-game-world
+# open GitLab merge request into capability
+# after integrating a coherent collection, open a capability-to-main merge request
 ```
 
 ## Merge-request acceptance
 
-A capability merge request should answer:
+A use-case or capability-collection merge request should answer:
 
 - What can the User or project do after this merge that it could not do before?
 - What is explicitly out of scope?
@@ -62,7 +67,7 @@ A capability merge request should answer:
 
 ## Avoid
 
-- branches that combine multiple independent capabilities;
+- use-case branches that combine multiple independent slices;
 - direct hotfixes to `main` unless the repository is unusable and the change is documented immediately;
 - implementation-only branches with traceability added later;
 - refactors hidden inside feature work without explanation.

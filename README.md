@@ -15,7 +15,7 @@ This commit establishes the project model, documentation structure, Git workflow
 The first implementation branch is:
 
 ```text
-capability/hello-game-world
+hello-game-world
 ```
 
 Its single purpose is to implement `CAP-001`: launch the game, greet the User in-world, and present a terminal prompt.
@@ -43,10 +43,10 @@ project-root/
 ```
 
 - `docs/` contains the Obsidian-compatible project model and AI collaboration contracts.
-- `src/` will contain the Python package and game/domain logic.
-- `bin/` contains only thin launchers and developer utilities.
+- `src/` will contain the `terminal-sci-fi-game` Python package and game/domain logic.
+- `bin/` contains only installers and development tools needed to install or maintain the game.
 - `tests/` verifies requirements and behavior.
 
 ## Working rule
 
-Never develop directly on `main`. Create a capability branch, define the vertical slice, implement it, test it, update traceability, and merge through a GitLab merge request.
+Never develop directly on `main`. Develop individual use-case slices from the shared `capability` branch, merge satisfactory slices back into `capability`, and merge a reviewed collection of capabilities from `capability` into `main`.

@@ -8,11 +8,11 @@ last_updated: 2026-07-31
 
 ## Python
 
-- Target a currently supported Python 3 release and record the exact minimum in `pyproject.toml` when implementation begins.
+- Target Python 3.11 or later, as recorded in `pyproject.toml`.
 - Prefer clear modules, functions, and data structures over speculative frameworks.
 - Use type hints for public interfaces and meaningful internal boundaries.
 - Keep deterministic game logic separate from terminal input/output.
-- Keep launchers thin.
+- Keep the root `terminal-sci-fi-game.py` launch script thin; keep launchers out of `bin/`.
 - Raise or return explicit errors rather than silently ignoring invalid state.
 - Avoid global mutable state.
 - Add dependencies only when they remove more complexity than they introduce.

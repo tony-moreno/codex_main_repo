@@ -4,7 +4,6 @@ Files included in the initial repository baseline:
 
 - `.editorconfig`
 - `.gitignore`
-- `.gitlab/merge_request_templates/Capability.md`
 - `CONTRIBUTING.md`
 - `PRINCIPLES.md`
 - `README.md`
@@ -26,6 +25,7 @@ Files included in the initial repository baseline:
 - `docs/gameplay/TERMINAL_LANGUAGE.md`
 - `docs/history/FOUNDING_NOTES.md`
 - `docs/implementation/BRANCHING_STRATEGY.md`
+- `docs/implementation/BASELINE_MANIFEST.md`
 - `docs/implementation/CODING_GUIDELINES.md`
 - `docs/implementation/TASK_QUEUE.md`
 - `docs/implementation/TEST_STRATEGY.md`

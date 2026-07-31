@@ -1,14 +1,15 @@
 # Contributing
 
-This repository uses capability-based development with GitLab merge requests.
+This repository integrates work through a shared `capability` branch and GitLab merge requests.
 
 ## Branch policy
 
 - Do not develop directly on `main`.
-- Create one branch per coherent capability.
-- Use the naming pattern `capability/<short-name>`.
+- Branch each coherent use-case slice from `capability`.
+- Use a short kebab-case branch name such as `hello-game-world`.
 - Keep unrelated behavior out of the branch.
-- Merge only through a merge request after documentation, implementation, tests, and traceability agree.
+- Merge satisfactory slices into `capability` only through a merge request after documentation, implementation, tests, and traceability agree.
+- Merge reviewed collections from `capability` into `main` through a separate merge request.
 
 See [BRANCHING_STRATEGY.md](docs/implementation/BRANCHING_STRATEGY.md) for the detailed workflow.
 

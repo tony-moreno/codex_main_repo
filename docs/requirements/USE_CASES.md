@@ -21,8 +21,9 @@ Use cases describe meaningful interactions from the User's perspective. Keep the
 
 **Trigger:**
 
-- The User launches the game initially using command line or script launch:
-```
+- The User launches the game from the repository root using the canonical script:
+
+```text
 python terminal-sci-fi-game.py
 ```
 
@@ -31,7 +32,8 @@ python terminal-sci-fi-game.py
 1. The application starts successfully.
 2. The application displays an in-world greeting.
 3. The application displays a visible terminal prompt.
-4. The application remains in a valid state suitable for later command-input development.
+4. The application remains static until the User presses any keyboard entry.
+5. After that entry, the application remains in a valid state suitable for later command-input development; interpreting the entry is out of scope.
 
 **Success condition:**
 
@@ -46,6 +48,6 @@ python terminal-sci-fi-game.py
 
 **Capability:** `CAP-001 — Greet User`
 
-**Planned branch:** `capability/hello-game-world`
+**Implementation branch:** `hello-game-world`, branched from `capability`
 
 **Status:** Defined; not implemented.

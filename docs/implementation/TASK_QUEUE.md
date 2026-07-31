@@ -17,16 +17,17 @@ Only actionable work belongs here.
 - [ ] Push `main` to GitLab.
 - [ ] Protect `main` and require merge requests.
 
-## Next capability — `hello-game-world`
+## Next use-case slice — `hello-game-world`
 
-- [ ] Create `capability/hello-game-world` from current `main`.
-- [ ] Select the Python package name and supported Python version.
-- [ ] Configure the package and documented entry point.
+- [x] Create `hello-game-world` from `capability`.
+- [x] Select the `terminal-sci-fi-game` package name and Python 3.11+.
+- [ ] Configure the package and canonical `python terminal-sci-fi-game.py` entry point.
 - [ ] Implement deterministic in-world greeting output.
 - [ ] Display the terminal prompt without interpreting input.
-- [ ] Add automated tests for `REQ-001` through `REQ-005` as applicable.
+- [ ] Add automated tests for `REQ-001` through `REQ-006` as applicable, including verification that the application remains static before keyboard entry.
 - [ ] Update package model, decisions, and traceability with actual paths.
-- [ ] Open a GitLab merge request into `main`.
+- [ ] Open a GitLab merge request from `hello-game-world` into `capability`.
+- [ ] After a coherent collection of capability work is integrated and reviewed, open a merge request from `capability` into `main`.
 
 ## Not yet scheduled
 

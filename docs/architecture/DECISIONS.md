@@ -32,7 +32,7 @@ Record major choices and rejected alternatives so future collaborators do not un
 
 **Status:** Accepted
 
-**Decision:** Never develop directly on `main`. Develop coherent vertical slices in branches named `capability/<short-name>` and merge through GitLab merge requests.
+**Decision:** Never develop directly on `main`. Branch the shared `capability` integration branch from `main`; branch coherent use-case slices such as `hello-game-world` from `capability`; merge satisfactory slices back into `capability`; and merge reviewed collections from `capability` into `main` through GitLab merge requests.
 
 **Rejected:** Long-lived layer branches such as `docs`, `parser`, or `database`, and direct commits to `main`.
 
@@ -42,11 +42,11 @@ Record major choices and rejected alternatives so future collaborators do not un
 
 **Status:** Accepted
 
-**Decision:** `bin/` contains only thin launchers and developer utilities. Reusable application and domain logic belongs under `src/`.
+**Decision:** `terminal-sci-fi-game.py` at the repository root is the canonical thin launcher. `bin/` contains only installers and installation/development tools. Reusable application and domain logic belongs under `src/terminal_sci_fi_game/`.
 
-**Rejected:** Placing the full implementation under `bin/`.
+**Rejected:** Placing the game launcher or full implementation under `bin/`.
 
-**Reason:** Separating launchers from package logic improves testing, reuse, packaging, and maintainability.
+**Reason:** Separating the canonical launch script, package logic, and installation tooling improves testing, reuse, packaging, and maintainability.
 
 ## DEC-005 — The first slice is `hello-game-world`
 
