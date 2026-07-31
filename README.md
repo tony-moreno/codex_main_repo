@@ -20,6 +20,16 @@ hello-game-world
 
 Its single purpose is to implement `CAP-001`: launch the game, greet the User in-world, and present a terminal prompt.
 
+## Launch
+
+From the repository root with Python 3.11 or later:
+
+```text
+python terminal-sci-fi-game.py
+```
+
+The initial slice displays the terminal splash and remains static until one key is pressed. The key is acknowledged but not interpreted, and the application exits cleanly.
+
 ## Start here
 
 1. Read [VISION.md](VISION.md).

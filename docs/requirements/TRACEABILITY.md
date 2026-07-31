@@ -27,11 +27,11 @@ VISION
 
 | Requirement | Architecture | Implementation | Test | Status |
 |---|---|---|---|---|
-| REQ-001 | Package and entry-point model | `terminal-sci-fi-game.py` and `src/terminal_sci_fi_game/` on `hello-game-world` | Launch acceptance test | Defined |
-| REQ-002 | Terminal presentation responsibility | `src/terminal_sci_fi_game/` on `hello-game-world` | Greeting output test | Defined |
-| REQ-003 | Terminal presentation responsibility | `src/terminal_sci_fi_game/` on `hello-game-world` | Visible prompt test | Defined |
-| REQ-004 | Test strategy | `tests/` on `hello-game-world` | Greeting and prompt automated tests | Defined |
-| REQ-005 | DEC-002 | Package dependencies and greeting implementation on `hello-game-world` | Offline/no-runtime-AI test | Defined |
-| REQ-006 | Use-case lifecycle responsibility | Input boundary on `hello-game-world` | Assert output and state do not change before simulated keyboard entry | Defined |
+| REQ-001 | Package and entry-point model | `terminal-sci-fi-game.py`, `src/terminal_sci_fi_game/cli.py` | `test_req_001_req_004_req_006_launcher_is_static_until_keypress` | Implemented |
+| REQ-002 | Terminal presentation responsibility | `src/terminal_sci_fi_game/splash.py`, `src/terminal_sci_fi_game/cli.py` | `test_req_002_and_req_003_render_greeting_and_prompt` | Implemented |
+| REQ-003 | Terminal presentation responsibility | `src/terminal_sci_fi_game/splash.py`, `src/terminal_sci_fi_game/cli.py` | `test_req_002_and_req_003_render_greeting_and_prompt` | Implemented |
+| REQ-004 | Test strategy | `tests/test_hello_game_world.py` | CAP-001 automated test suite | Implemented |
+| REQ-005 | DEC-002 | `pyproject.toml`, `src/terminal_sci_fi_game/` | `test_req_005_runtime_has_no_network_or_ai_dependencies` | Implemented |
+| REQ-006 | Use-case lifecycle responsibility | `src/terminal_sci_fi_game/terminal.py`, `src/terminal_sci_fi_game/cli.py` | `test_req_006_output_does_not_change_while_waiting` and launcher acceptance test | Implemented |
 
 Update this table in the same merge request that introduces or changes behavior.

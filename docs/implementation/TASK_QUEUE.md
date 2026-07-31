@@ -21,11 +21,11 @@ Only actionable work belongs here.
 
 - [x] Create `hello-game-world` from `capability`.
 - [x] Select the `terminal-sci-fi-game` package name and Python 3.11+.
-- [ ] Configure the package and canonical `python terminal-sci-fi-game.py` entry point.
-- [ ] Implement deterministic in-world greeting output.
-- [ ] Display the terminal prompt without interpreting input.
-- [ ] Add automated tests for `REQ-001` through `REQ-006` as applicable, including verification that the application remains static before keyboard entry.
-- [ ] Update package model, decisions, and traceability with actual paths.
+- [x] Configure the package and canonical `python terminal-sci-fi-game.py` entry point.
+- [x] Implement deterministic in-world greeting output.
+- [x] Display the terminal prompt without interpreting input.
+- [x] Add automated tests for `REQ-001` through `REQ-006`, including verification that the application remains static before keyboard entry.
+- [x] Update package model, decisions, and traceability with actual paths.
 - [ ] Open a GitLab merge request from `hello-game-world` into `capability`.
 - [ ] After a coherent collection of capability work is integrated and reviewed, open a merge request from `capability` into `main`.
 

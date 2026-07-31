@@ -33,7 +33,7 @@ python terminal-sci-fi-game.py
 2. The application displays an in-world greeting.
 3. The application displays a visible terminal prompt.
 4. The application remains static until the User presses any keyboard entry.
-5. After that entry, the application remains in a valid state suitable for later command-input development; interpreting the entry is out of scope.
+5. The application acknowledges the entry without interpreting it and exits cleanly.
 
 **Success condition:**
 
@@ -50,4 +50,4 @@ python terminal-sci-fi-game.py
 
 **Implementation branch:** `hello-game-world`, branched from `capability`
 
-**Status:** Defined; not implemented.
+**Status:** Implemented on `hello-game-world`; pending merge review.
