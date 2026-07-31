@@ -1,0 +1,45 @@
+# Baseline Manifest
+
+Files included in the initial repository baseline:
+
+- `.editorconfig`
+- `.gitignore`
+- `.gitlab/merge_request_templates/Capability.md`
+- `CONTRIBUTING.md`
+- `PRINCIPLES.md`
+- `README.md`
+- `VISION.md`
+- `bin/README.md`
+- `docs/HOME.md`
+- `docs/ai/CHANGE_PROMPT.md`
+- `docs/ai/DESIGN_PROMPT.md`
+- `docs/ai/PROJECT_CONTEXT.md`
+- `docs/ai/REVIEW_PROMPT.md`
+- `docs/architecture/DECISIONS.md`
+- `docs/architecture/DOMAIN_MODEL.md`
+- `docs/architecture/EVENTS.md`
+- `docs/architecture/PACKAGE_MODEL.md`
+- `docs/architecture/STATE_MACHINES.md`
+- `docs/gameplay/CORE_LOOP.md`
+- `docs/gameplay/KNOWLEDGE.md`
+- `docs/gameplay/PLAYER_EXPERIENCE.md`
+- `docs/gameplay/TERMINAL_LANGUAGE.md`
+- `docs/history/FOUNDING_NOTES.md`
+- `docs/implementation/BRANCHING_STRATEGY.md`
+- `docs/implementation/CODING_GUIDELINES.md`
+- `docs/implementation/TASK_QUEUE.md`
+- `docs/implementation/TEST_STRATEGY.md`
+- `docs/ontology/CAPABILITIES.md`
+- `docs/ontology/CONSTRAINTS.md`
+- `docs/ontology/ENTITIES.md`
+- `docs/ontology/PROCESSES.md`
+- `docs/ontology/RELATIONSHIPS.md`
+- `docs/ontology/RESOURCES.md`
+- `docs/ontology/WORLD.md`
+- `docs/requirements/CHANGE_LOG.md`
+- `docs/requirements/REQUIREMENTS.md`
+- `docs/requirements/TRACEABILITY.md`
+- `docs/requirements/USE_CASES.md`
+- `pyproject.toml`
+- `src/README.md`
+- `tests/README.md`
